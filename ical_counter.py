@@ -5,7 +5,7 @@ import csv
 
 PATH = "."
 
-filenames = [f for f in os.listdir('.') if os.path.isfile(f)]
+filenames = [f for f in os.listdir(PATH) if os.path.isfile(f)]
 hours = defaultdict(int)
 uses = defaultdict(int)
 for fname in filenames:
